@@ -8,3 +8,13 @@
     background-color: rgba(0, 0, 0, 0);
     border: 0;
   }
+
+.menu{
+    width: 100vw;
+    height: ;   
+}
+  button{
+    display: flex;
+    flex-direction: row;
+
+  }
