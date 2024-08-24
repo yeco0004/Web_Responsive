@@ -1,20 +1,16 @@
 :root {
     font-size: 16px;
-  }
-  
-  * {
-    margin: 0px;
-    padding: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 0;
-  }
-
-.menu{
-    width: 100vw;
-    height: ;   
+    background-color: #ffffff;
 }
-  button{
-    display: flex;
-    flex-direction: row;
 
-  }
+header{
+  font-size: larger;
+}
+
+nav{
+  height: 100%;
+  width: 100%;
+  position: flex;
+  flex-direction: column;
+  padding-inline-start: 0%;
+}
