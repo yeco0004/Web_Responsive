@@ -1,16 +1,48 @@
-:root {
-    font-size: 16px;
-    background-color: #ffffff;
+*{
+  background-color: whitesmoke;
 }
 
-header{
+header {
   font-size: larger;
+  
 }
 
-nav{
-  height: 100%;
-  width: 100%;
-  position: flex;
+nav {
+  display: flex;
   flex-direction: column;
-  padding-inline-start: 0%;
+  justify-content:center;
+}
+
+a {
+  border: 100px;
+  border-radius: 10%;
+  margin: 10px;
+  width:  100px;
+  justify-content: center;
+  border-radius: 10%;
+}
+
+button{
+  height: 20vh;
+  width: 75vw;
+  font-size: 40px;
+  border-radius: 10%;
+  justify-content: center;
+
+}
+
+h1{
+  font-size: 50px;
+}
+
+h2{
+  font-size: 25px;
+}
+
+p{
+  font-size: 16px;
+  background-color: aqua;
+  padding: 10px;
+  border: solid 1px;
+  border-radius: 10px;
 }
