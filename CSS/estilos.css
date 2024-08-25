@@ -1,48 +1,44 @@
+:root{
+  font-size: 16px;
+}
+
 *{
-  background-color: whitesmoke;
+  background-color: beige;
 }
 
-header {
-  font-size: larger;
-  
+.header_prin{
+  font-size: medium;
 }
 
-nav {
+.menu{
   display: flex;
   flex-direction: column;
-  justify-content:center;
-}
-
-a {
-  border: 100px;
-  border-radius: 10%;
-  margin: 10px;
-  width:  100px;
   justify-content: center;
-  border-radius: 10%;
 }
 
-button{
-  height: 20vh;
-  width: 75vw;
-  font-size: 40px;
-  border-radius: 10%;
-  justify-content: center;
-
+a{
+  padding: 16px;
 }
 
-h1{
+.btn_menu{
+  width: 350px;;
+  height: 17vh;
   font-size: 50px;
 }
 
-h2{
-  font-size: 25px;
+@media (min-width: 650px) and (max-width: 960px){
+  .menu{
+    flex-direction: row;
+  }
+
+  .btn_menu{
+    width: 200px;
+    height: 32vh;
+  }
 }
 
-p{
-  font-size: 16px;
-  background-color: aqua;
-  padding: 10px;
-  border: solid 1px;
-  border-radius: 10px;
+@media (min-width: 961px){
+  .btn_menu{
+    width: 90vw;
+  }
 }
