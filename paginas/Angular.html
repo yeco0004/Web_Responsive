@@ -1,27 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Angular</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
 </head>
+
 <body>
-    <header> 
+    <header>
         <h1 class="titulo">Angular</h1>
     </header>
 
     <section>
         <h2>¿Qué es?</h2>
-        <p></p>
+        <p>Angular es un framework de ingeniería de software de código abierto mantenido por Google,
+            que sirve para desarrollar aplicaciones web de estilo Single Page Application (SPA) y Progressive Web App
+            (PWA).
+            Sirve tanto para versiones móviles como de escritorio.
+        </p>
         <h2>Caracteristicas</h2>
-        <p></p>
+        <p>
+        <ul>
+            <li>
+                <h3>Escalabilidad:</h3>
+            </li> Angular te permite comenzar con proyectos pequeños y luego crecer a medida que tu equipo y
+            aplicaciones lo requieran. <br>
+            <li>
+                <h3>Comunidad activa:</h3>
+            </li> Millones de desarrolladores en todo el mundo utilizan Angular y forman parte de una comunidad amigable
+            y próspera. <br>
+            <li>
+                <h3>Soporte para todos:</h3>
+            </li> Angular incluye características como hidratación, internacionalización, seguridad y accesibilidad
+            incorporadas para garantizar que puedas construir aplicaciones que lleguen a todos en todo el mundo.
+            <li>
+                <h3>Uso de DOM regular</h3>
+            </li> Angular hace uso de DOM regular, lo que permite una mejor organización conforme avanza el desarrollo
+            web.
+            <li>
+                <h3>Compatibilidad móvil y de escritorio</h3>
+            </li>Angular funciona tanto para desarrollar app moviles como de escritorio, por lo cual tambien es
+            compatible con muchos navegadores web
+            <li>
+                <h3>Velocidad y rendimiento</h3>
+            </li>Angular genera código altamente optimizado a partir de plantillas, lo que ofrece los beneficios del
+            código escrito a mano con la productividad de un marco. Además, las aplicaciones angulares se cargan
+            rápidamente.
+
+
+        </ul>
+        </p>
         <h2>Configuración</h2>
-        <p></p>
+        <p> Para empezar a usar Angular debemos hacer lo siguiente <br>
+
+        <ol>
+            <li value="1">
+                <h4>Instalación de Node.js y npm</h4>
+            </li>
+            Angular requiere Node.js y npm (Node Package Manager). Si no los tienes instalados, sigue estos pasos: <br>
+
+            Descarga e instala Node.js desde su sitio oficial. Al instalar Node.js, también se instalará npm
+            automáticamente. <br>
+
+            Verifica que la instalación sea correcta ejecutando en el mismo orden los siguientes comandos en tu terminal: <br><br>
+
+            bash <br>
+            node -v <br>
+            npm -v<br><br>
+            Debería mostrarse la versión de Node.js y npm respectivamente.<br>
+
+            <li>
+                <h4>Instalar Angular CLI</h4>
+            </li>
+            Angular CLI (Command Line Interface) es una herramienta que te ayuda a crear y manejar proyectos Angular.
+            Para instalarla, ejecuta: <br><br>
+
+            bash <br>
+            npm install -g @angular/cli <br><br>
+            Esto instalará Angular CLI globalmente en tu sistema. <br>
+
+            <li>
+                <h4>Crear un nuevo proyecto Angular</h4>
+            </li>
+            Con Angular CLI previamente instalada, puedes crear un nuevo proyecto Angular ejecutando el siguiente
+            comando: <br> <br>
+
+            bash <br>
+            ng new nombre-del-proyecto <br> <br>
+
+            Aquí, nombre-del-proyecto es el nombre que le quieras dar a tu proyecto. <br>
+            El CLI te hará algunas preguntas sobre la configuración inicial (como si deseas agregar Angular Routing y
+            qué estilo de hojas prefieres). Responde según tus preferencias.
+
+            <li>
+                <h4>Navegar al directorio del proyecto</h4>
+            </li>
+            Después de crear el proyecto, navega hasta el directorio del proyecto: <br><br>
+
+            bash <br>
+            cd nombre-del-proyecto <br>
+            
+            <li>
+                <h4>Iniciar el servidor de desarrollo</h4>
+            </li>
+            Para ejecutar el proyecto Angular en tu servidor de desarrollo, usa el siguiente comando: <br>
+
+            bash <br>
+            ng serve <br> <br>
+            
+            Luego, abre tu navegador web y navega a http://localhost:4200/. Aquí deberías ver la página de bienvenida de
+            Angular. <br>
+
+            <li>
+                <h4>Configurar el proyecto según tus necesidades</h4>
+            </li>
+            Una vez que tengas tu proyecto funcionando, puedes comenzar a configurarlo según tus necesidades. Aquí hay
+            algunas cosas que podrías querer hacer: <br> <br>
+            <ul>
+                <li>Agregar componentes: Usa ng generate component nombre-del-componente para generar nuevos
+                    componentes.</li>
+                <li>Configurar rutas: Modifica el archivo app-routing.module.ts para agregar nuevas rutas.</li>
+                <li>Instalar dependencias: Usa npm install nombre-paquete para instalar paquetes adicionales necesarios
+                    para tu proyecto.</li>
+            </ul>
+
+            <li>
+                <h4>Construir para producción</h4>
+            </li>
+            Cuando estés listo para lanzar tu aplicación, puedes construir el proyecto para producción usando: <br><br>
+
+            bash <br>
+            ng build --prod <br>
+            Esto generará una carpeta dist/ con tu aplicación optimizada para ser desplegada en un servidor.
+
+            Con estos pasos, tendrás tu proyecto Angular configurado y listo para ser desarrollado.
+
+        </ol>
+
+        </p>
         <h2>Signal</h2>
-        <p></p>
-        <a href="../index.html"><button>Atrás</button></a>
-        
+        <p>
+            Una Angular Signal es una función que gestiona el estado y las dependencias entre diferentes valores en una aplicación Angular. <br>
+            Imagina que tienes varios valores que dependen unos de otros; cuando uno de estos valores cambia, las signals se encargan de actualizar automáticamente los valores dependientes. <br>
+            Esto se logra mediante relaciones reactivas, proporcionando una actualización fluida y sin complicaciones en toda la aplicación.
+        </p>
+
+        <h3>Como crear una Signal</h3>
+        <p>
+            Crear una Angular Signal es un proceso sencillo que se puede realizar con pocas líneas de código. Una signal se define utilizando la función signal, que toma un valor inicial.
+        </p>
+        <img src="../recursos/signalangular.png" alt="signalangular.png">
+
+
+
+        <h3> Como modificar una Angular Signal</h3>
+
+        <p>Para modificar el valor de una señal, Angular proporciona los métodos set y update. <br><br>
+
+            set: Establece un nuevo valor directamente. <br>
+            update: Permite actualizar el valor actual basado en una función que recibe el valor actual y devuelve el nuevo valor.</p>
+        <br>
+        <img src="../recursos/modang.png" alt="modang.png">
+
+        <h3>Acceso a los valores de una Signal</h3>
+        <p>
+            Acceder al valor de una señal es simple y directo. Llamar a la señal como si fuera una función nos devuelve su valor actual.
+        </p>
+        <img src="../recursos/llamasignal.png" alt="llamasignal.png">
     </section>
+
+    
+
+    <a href="../index.html"><button>Atrás</button></a>
 </body>
+
 </html>
