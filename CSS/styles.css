@@ -10,10 +10,8 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    padding: 20px;
-    position: fixed;
+    padding: 30px;
     width: 100%;
-    top: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1000;
 }
@@ -24,12 +22,10 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-
-    background-color: #171717;
+    background-color: #0c192c ;
 }
 
 .btn_menu {
-    
     width: 95%;
     height: 15vh;
     position: relative;
@@ -78,7 +74,7 @@ body {
 
 .btn_menu span {
     color: #dfdfdf;
-    font-size: 15px;
+    font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
     position: relative;
