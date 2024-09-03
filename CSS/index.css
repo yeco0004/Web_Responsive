@@ -19,7 +19,7 @@ p {
     font-size: 1.25em;
 }
 
-button {
+/* button {
     font-size: 1.25em;
     font-weight: bold;
     padding: 10px 30px;
@@ -32,7 +32,21 @@ button {
 
 button:hover {
     background-color: rgb(101, 33, 165);
-}
+} */
+
+.carta a {
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espacio entre el texto y el borde del botón */
+    border: none; /* Elimina el borde del enlace */
+    border-radius: 5px; /* Agrega un borde redondeado al botón */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    text-decoration: none; /* Elimina la decoración del texto del enlace */
+  }
+  
+  .carta a:hover {
+    background-color: #3e8e41; /* Color de fondo del botón cuando se pasa sobre él */
+  }
 
 .container {
     max-width: 1400px;
@@ -117,11 +131,10 @@ button:hover {
     }
 
     #language .carta {
-        padding: 50px;
+        padding: 50px 30px;
         background-size: 100% 150px;
         background-repeat: no-repeat;
         background-position-y: 0;
-        background-color: rgba(50, 50, 50, 1);
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
@@ -151,7 +164,6 @@ button:hover {
 
     .text {
         width: 100%;
-        padding: 1rem 2rem;
     }
 
     /* aqui termina */
