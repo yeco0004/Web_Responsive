@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
+
 }
-html{
-    background-color: rgb(30, 30, 30);
-}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    background-color: rgb(30, 30, 30);
     margin: 0;
+
+
 }
 
 h2 {
@@ -22,13 +25,13 @@ p {
 }
 
 .carta a {
-    background-color: #4CAF50; /* Color de fondo del botón */
-    color: #fff; /* Color del texto del botón */
-    padding: 10px 20px; /* Espacio entre el texto y el borde del botón */
-    border: none; /* Elimina el borde del enlace */
-    border-radius: 5px; /* Agrega un borde redondeado al botón */
-    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
-    text-decoration: none; /* Elimina la decoración del texto del enlace */
+    background-color: #4CAF50; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    text-decoration: none; 
   }
   
   .carta a:hover {
@@ -36,7 +39,6 @@ p {
   }
 
 .container {
-    max-width: 1400px;
     margin: auto;
 }
 
@@ -61,7 +63,7 @@ p {
 #language .carta {
     background-size: cover;
     padding: 50px 0px;
-    margin: 30px;
+    margin: 50px;
     border-radius: 15px;
 }
 
@@ -94,6 +96,7 @@ p {
 @media (min-width: 720px) {
 
     #language .programas {
+        
         display: flex;
         justify-content: center;
         flex-direction: row;
