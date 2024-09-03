@@ -46,7 +46,7 @@ button:hover {
 }
 
 #language .container {
-    padding: 150px 12px;
+    padding: 100px 12px;
 }
 
 #language h2 {
@@ -59,31 +59,25 @@ button:hover {
 }
 
 #language .carta {
-    background-position: center center;
     background-size: cover;
     padding: 50px 0px;
     margin: 30px;
     border-radius: 15px;
 }
 
+
 .carta:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url("../img/typescript.png");
-            background-position: 70% 78%;
-
-
-
+    background-position: 70% 100%;
 }
 
 .carta:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
             rgba(0, 0, 0, 0.5)), url("../img/angular.png");
-            background-position: center center;
-
-
-
+    background-position: center center;
 }
 
 .carta:nth-child(3) {
@@ -102,6 +96,8 @@ button:hover {
     #language .programas {
         display: flex;
         justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
     }
 
     #language p {
@@ -111,6 +107,7 @@ button:hover {
     }
 
     #language h2 {
+        padding-top: 50px;
         font-size: 4em;
     }
 
@@ -128,27 +125,60 @@ button:hover {
         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
 
+
+    /* aqui empieza */
+    .carta {
+        background-color: rgba(50, 50, 50, 1);
+        border-radius: 15px;
+        height: fit-content;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 78%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .text {
+        width: 100%;
+        padding: 1rem 2rem;
+    }
+
+    /* aqui termina */
     .carta:first-child {
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)), url("../img/typescript-cropped.png");
-        background-position: 70% 78%;
+
     }
 
     .carta:nth-child(2) {
+
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)), url("../img/angular-cropped.png");
-        background-position: center center;
+
 
     }
 
     .carta:nth-child(3) {
+        background-size: cover;
+        background-repeat: no-repeat;
         background-image: linear-gradient(0deg,
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)), url("../img/ionic-cropped.png");
-        background-position: left bottom;
-
     }
 
 }
