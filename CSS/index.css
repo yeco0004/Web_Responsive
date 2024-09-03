@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(101, 33, 165);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+#language {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#language .container {
+    padding: 150px 12px;
+}
+
+#language h2 {
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#language p {
+    display: none;
+}
+
+#language .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/typescript.png");
+            background-position: 70% 78%;
+
+
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/angular.png");
+            background-position: center center;
+
+
+
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)), url("../img/ionic.png");
+    background-position: left bottom;
+
+
+
+
+}
+
+@media (min-width: 720px) {
+
+    #language .programas {
+        display: flex;
+        justify-content: center;
+    }
+
+    #language p {
+        display: block;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    #language h2 {
+        font-size: 4em;
+    }
+
+    #language h3 {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    #language .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .carta:first-child {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("../img/typescript-cropped.png");
+        background-position: 70% 78%;
+    }
+
+    .carta:nth-child(2) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("../img/angular-cropped.png");
+        background-position: center center;
+
+    }
+
+    .carta:nth-child(3) {
+        background-image: linear-gradient(0deg,
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)), url("../img/ionic-cropped.png");
+        background-position: left bottom;
+
+    }
+
+}
