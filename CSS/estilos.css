@@ -34,22 +34,7 @@
     
   }
   
-  
-  h2 {
-    font-size: 1.2em;
-    text-align: center;
-    margin: 5px;
-  }
-  
-  h3 {
-    font-size: 1.1em;
-    margin-top: 0.5em;
-  }
-  
-  h4 {
-    font-size: 1em;
-    margin-top: 0.5em;
-  }
+
   
 ul {
   list-style: none; 
@@ -88,7 +73,7 @@ li h3 {
   }
   
   h2 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
   
   h3 {
