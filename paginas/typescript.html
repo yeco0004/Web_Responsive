@@ -1,87 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typescript</title>
     <link rel="stylesheet" href="../CSS/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
+
 <body>
-    <header> 
-        <h1 class="titulo">Typescript</h1>
+
+    <header>
+        <a href="../index.html">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <section class="titulo_class">
+            <h1 class="titulo">Typescript</h1>
+        </section>
     </header>
 
-    <section>  
-        <h2>¿Que es?</h2>
-
+    <section>
+        <h1>¿Que es?</h1>
         <p>TypeScript es un lenguaje de programación de tipado estático que se compila a JavaScript.
-            Esto significa que le agregas tipos a tus variables, funciones y objetos, 
-            lo que permite al compilador detectar errores en tiempo de desarrollo antes de que se conviertan en problemas en tiempo de ejecución. 
+            Esto significa que le agregas tipos a tus variables, funciones y objetos,
+            lo que permite al compilador detectar errores en tiempo de desarrollo antes de que se conviertan en
+            problemas en tiempo de ejecución.
         </p>
     </section>
     <section>
         <h2>Sintaxis</h2>
-
-        <p>TypeScript extiende la sintaxis de JavaScript, 
+        <p>TypeScript extiende la sintaxis de JavaScript,
             por lo que si ya conoces JavaScript, algunos conceptos fundamentales son:
         </p>
 
-        <h3>Variables y tipos</h3>
+        <h1>Variables y tipos</h1>
         <ul>
             <li>
-                <h4>Declacaciones</h4>
-                <img src="../recursos/declaraciones.png" alt="Declaraciones.png">
+                <h4>Declaraciones</h4>
+                <img src="../recursos/declaraciones.png" alt="Imagen de declaraciones en TypeScript">
                 <ul>
-                    <li>let: Declaran variables que pueden reasignarse.</li>
-                    <li>const: Constantes que no pueden reasignarse.</li>
-                    <li>:tipo: Especifica el tipo de variable.</li>
+                    <li><i class="fas fa-code"></i> Let: variables que pueden cambiar su valor.</li>
+                    <li><i class="fas fa-lock"></i> Const: Constantes que no pueden ser alteradas.</li>
+                    <li><i class="fas fa-tag"></i> Tipo: Especifica el tipo de variable.</li>
                 </ul>
-                <h4>Tipos de variables</h4>
+                <h1>Tipos de variables</h1>
                 <ul>
-                    <li>string: Cadena de texto.</li>
-                    <li>number: Números (Enteros, flotantes)</li>
-                    <li>boolean: Valores booleanos (True, False) </li>
-                    <li>Null y Undefinied: Valores especiales</li>
-                    <li>any: Tipo de comodín (evitar el uso excesivo).</li>
-                </ul>
-            </li>
-            <li>
-                <h4>Arrays y Tuplas</h4>
-                <ul>
-                    <li>Arrays</li>
-                    <img src="../recursos/array.png" alt="Recursos_img">
-                    <li>Tuplas</li>
-                    <img src="../recursos/Tuplas.png" alt="Tuplas_img">
+                    <li><i class="fas fa-file-alt"></i> String: Cadena de texto.</li>
+                    <li><i class="fas fa-sort-numeric-up"></i> Number: Números (Enteros, flotantes)</li>
+                    <li><i class="fas fa-thumbs-up"></i> Boolean: Valores booleanos (True, False)</li>
+                    <li><i class="fas fa-ban"></i> Null y Undefinied: Valores especiales</li>
+                    <li><i class="fas fa-question-circle"></i> Any: Tipo de comodín (evitar el uso excesivo).</li>
                 </ul>
             </li>
             <li>
-                <h4>Interfaces</h4>
+                <h1>Arrays y Tuplas</h1>
                 <ul>
-                    <li>Definicion</li>
-                    <img src="../recursos/Definicion_int.png" alt="Defincion_interfaces_img">
-                    <li>Implementacion</li>
-                    <img src="../recursos/uso_interfaces.png" alt="Uso_interfaces_img">
+                    <h4>Arrays</h4>
+                    <img src="../recursos/array.png" alt="Imagen de arrays en Ts">
+                    <h4>Tuplas</h4>
+                    <img src="../recursos/Tuplas.png" alt="Imagen de Tuplas en Ts">
                 </ul>
             </li>
             <li>
-                <h4>Funciones</h4>
-                <img src="../recursos/Funciones.png" alt="funciones.png">
+                <h1>Interfaces</h1>
+                <ul>
+                    <h2>Definicion</h2>
+                    <img src="../recursos/Definicion_int.png" alt="Imagen de definicion de interfaces en Ts">
+                    <p>En TypeScript, una interfaz es una estructura que define la forma de un objeto, especificando qué
+                        propiedades y métodos debe tener, sin implementar su lógica. </p>
+                    <h2>Implementacion</h2>
+                    <img src="../recursos/uso_interfaces.png" alt="Imagen de uso de interfaces en Ts">
+                    <p>En TypeScript, una interfaz se implementa en una clase para asegurar que dicha clase cumpla con
+                        la estructura especificada.</p>
+                </ul>
             </li>
             <li>
-                <h4>Clases</h4>
-                <img src="../recursos/clases.png" alt="clases.png">
+                <h1>Funciones</h1>
+                <img src="../recursos/Funciones.png" alt="Imagen de funciones en Ts">
+                <p>En TypeScript, una función es un bloque de código que realiza una tarea específica, recibe parámetros
+                    y puede devolver un valor. Se define con la palabra clave function, y puede especificar tipos para
+                    los parámetros y el valor de retorno.</p>
             </li>
             <li>
-                <h4>Generic</h4>
-                <img src="../recursos/generic.png" alt="generic.png">
+                <h1>Clases</h1>
+                <img src="../recursos/clases.png" alt="Imagen de clases en Ts">
+                <p>En TypeScript, una clase es una plantilla para crear objetos que encapsula datos (propiedades) y
+                    comportamientos (métodos), y puede incluir constructores para inicializar objetos. </p>
+            </li>
+            <li>
+                <h1>Generic</h1>
+                <img src="../recursos/generic.png" alt="imagen de una clase generic en Ts">
+                En TypeScript, un generic es una forma de crear componentes reutilizables que pueden trabajar con
+                distintos tipos de datos sin perder la tipificación. Permiten definir clases, funciones o interfaces que
+                aceptan parámetros de tipo, proporcionando mayor flexibilidad y seguridad en el código.
             </li>
         </ul>
     </section>
-    <section>
-        
-    </section>
-
-    <a href="../index.html"><button>Atrás</button></a>
-    
 </body>
+
 </html>
